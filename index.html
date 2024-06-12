@@ -66,20 +66,20 @@
             margin: 0 24px;
         }
 
-        nav ul li a{
+        nav ul li a {
             text-decoration: none;
             color: white;
             margin: 0 24px;
         }
 
-        nav ul li a:hover{
+        nav ul li a:hover {
             text-decoration: null;
-            font-size: 2.55rem;
+            font-size: 2.00rem;
             color: rgb(0, 0, 0);
             margin: 0 24px;
         }
 
-        nav .profilepicture span{
+        nav .profilepicture span {
             font-size: 2.45rem;
             font-weight: 700;
         }
@@ -90,7 +90,7 @@
             margin: 80px 0;
         }
 
-        .firstSection > div {
+        .firstSection>div {
             width: 30%;
         }
 
@@ -107,6 +107,79 @@
         .purple {
             color: #F2613F;
         }
+
+        .text-gray {
+            color: gray;
+        }
+
+        #element {
+            color: #F2613F;
+        }
+
+        .secondSection {
+            max-width: 80vw;
+            margin: auto;
+            height: 80vh;
+        }
+
+        .secondSection h1 {
+            font-size: 2.10rem;
+        }
+
+        main hr {
+            border: 0;
+            background: white;
+            height: 1.5px;
+            margin: 50px 84px;
+            
+        }
+
+        .secondSection .box {
+            background-color: white;
+            width: 90wh;
+            height: 2px;
+            margin: 56px 0;
+            display: flex;
+        }
+
+        .secondSection .vertical {
+            height: 98px;
+            width: 1px;
+            background-color: white;
+            margin: 0 108px;
+        }
+        .image-top{
+            width: 42px;
+            position: relative;
+            top: -52px;
+        }
+        .image-top-cpp{
+            width: 30px;
+            position: relative;
+            top: -52px;
+        }
+        .vertical-title{
+            position: relative;
+            width: 150px;
+            top: 55px ;
+        }
+        .vertical-title-cpp{
+            position: relative;
+            width: 150px;
+            top: 62px ;
+        }
+        .vertical-desc{
+            position: relative;
+            top: 90px;
+            width: 150px;
+            font-size: 9px;
+        }
+        .vertical-desc-cpp{
+            position: relative;
+            top: 90px;
+            width: 150px;
+            font-size: 9px;
+        }
     </style>
 </head>
 
@@ -115,7 +188,7 @@
         <nav>
             <div class="profilepicture">
                 <img src="buildbg.png" alt="Profile Picture">
-                <span class = "black" >Raj Aditya</span>
+                <span class="black">Raj Aditya</span>
             </div>
             <div class="center">Portfolio Website</div>
             <div class="right">
@@ -133,14 +206,105 @@
         <section class="firstSection">
             <div class="leftSection">
                 Hi my name is <span class="purple">Raj.</span>
-                <div>and I am a passionate</div>
-                <div>Problem Solver.</div>
+                <div>& I am a passionate</div>
+                <span id="element"></span>
             </div>
             <div class="rightSection">
                 <img src="coderbg.png" alt="Coder Background">
             </div>
         </section>
+
+        <hr>
+
+        <section class="secondSection">
+            <span class="text-gray">What I have done so far.</span>
+            <h1>Work Experience </h1>
+
+            <div class="box">
+                <div class="vertical">
+                    <img class="image-top" src="c.svg" alt="">
+                    <div class="vertical-title">
+                        C/C++ Programming Concepts
+                    </div>
+                    <div class="vertical-desc">
+                        Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                        Veniam error ratione doloremque quos fugiat! Sit odit quo
+                        ex corporis assumenda, mollitia alias magni?
+                    </div>
+                </div>
+                <div class="vertical">
+                    <img class = "image-top-cpp" src="cpp_logo.png" alt="">
+                    <div class="vertical-title-cpp">
+                        DSA & OOPS Concepts using Java & C++
+                    </div>
+                    <div class="vertical-desc-cpp">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                        Reiciendis deleniti veniam, facilis sit et tempore fuga 
+                        ad ab libero sequi iste quis iusto consequatur!
+                    </div>
+                </div>
+                <div class="vertical">
+                    <img class = "image-top" src="html.png" alt="">
+                    <div class="vertical-title">
+                        Data Base Management Systems & HTML,CSS,JS
+                    </div>
+                    <div class="vertical-desc">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                        Reiciendis deleniti veniam, facilis sit et tempore fuga 
+                        ad ab libero sequi iste quis iusto consequatur!
+                    </div>
+                </div>
+                <div class="vertical">
+                    <img class = "image-top" src="java.png" alt="">
+                    <div class="vertical-title">
+                        Android Development with Java & XML
+                    </div>
+                    <div class="vertical-desc">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                        Reiciendis deleniti veniam, facilis sit et tempore fuga 
+                        ad ab libero sequi iste quis iusto consequatur!
+                    </div>
+                </div>
+                <div class="vertical">
+                    <img class = "image-top" src="python.svg" alt="">
+                    <div class="vertical-title">
+                        Machine Learning with Python Language
+                    </div>
+                    <div class="vertical-desc">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                        Reiciendis deleniti veniam, facilis sit et tempore fuga 
+                        ad ab libero sequi iste quis iusto consequatur!
+                    </div>
+                </div>
+                <div class="vertical">
+                    <img class = "image-top" src="python.svg" alt="">
+                    <div class="vertical-title">
+                        Natural Language Processing
+                    </div>
+                    <div class="vertical-desc">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                        Reiciendis deleniti veniam, facilis sit et tempore fuga 
+                        ad ab libero sequi iste quis iusto consequatur!
+                    </div>
+                </div>
+            </div>
+
+        </section>
     </main>
+
+    <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+
+    <!-- Load library from the CDN -->
+    <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+
+    <!-- Setup and start animation! -->
+    <script>
+        var typed = new Typed('#element', {
+            strings: ['Problem Solver.', 'Front-End Developer.', 'Solo-Competitor.', 'Android Developer.', 'Gamer.'],
+            typeSpeed: 50,
+        });
+    </script>
+
 </body>
 
 </html>
