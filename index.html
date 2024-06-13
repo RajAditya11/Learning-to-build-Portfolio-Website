@@ -15,17 +15,33 @@
             box-sizing: border-box;
         }
 
+        index {
+            scroll-behavior: smooth;
+        }
+
+        header {
+            margin-top: 0;
+            padding: 0px 0;
+            position: fixed;
+            width: 100%;
+            top: 0;
+            left: 0;
+            z-index: 1000;
+        }
+
         body {
             background-color: #0C0C0C;
             color: white;
             font-family: 'Poppins', sans-serif;
+            margin: 0;
+            padding: 0;;
         }
 
         nav {
             display: flex;
             justify-content: space-between;
             align-items: center;
-            background-color: #F2613F;
+            background-color: #071830;
             padding: 0 20px;
             height: 96px;
         }
@@ -99,6 +115,16 @@
             margin: 125px 0;
         }
 
+        .leftSection .btn {
+            background-color: #291fa7;
+            color: white;
+            border: solid white;
+            border-radius: 6px;
+            cursor: pointer;
+            padding: 10px;
+            font-size: 20px;
+        }
+
         .rightSection img {
             width: 80%;
             margin: 20px 0;
@@ -131,7 +157,7 @@
             background: white;
             height: 1.5px;
             margin: 50px 84px;
-            
+
         }
 
         .secondSection .box {
@@ -148,37 +174,63 @@
             background-color: white;
             margin: 0 108px;
         }
-        .image-top{
+
+        .image-top {
             width: 42px;
             position: relative;
             top: -52px;
         }
-        .image-top-cpp{
+
+        .image-top-cpp {
             width: 30px;
             position: relative;
             top: -52px;
         }
-        .vertical-title{
+
+        .vertical-title {
             position: relative;
             width: 150px;
-            top: 55px ;
+            top: 55px;
         }
-        .vertical-title-cpp{
+
+        .vertical-title-cpp {
             position: relative;
             width: 150px;
-            top: 62px ;
+            top: 62px;
         }
-        .vertical-desc{
+
+        .vertical-desc {
             position: relative;
             top: 90px;
             width: 150px;
             font-size: 9px;
         }
-        .vertical-desc-cpp{
+
+        .vertical-desc-cpp {
             position: relative;
             top: 90px;
             width: 150px;
             font-size: 9px;
+        }
+
+        footer {
+            background-color: #071830;
+        }
+
+        .footer {
+            display: flex;
+            padding: 25px 125px;
+            justify-content: space-evenly;
+        }
+
+        .footer>div {
+            width: 225px;
+        }
+
+        footer .text-rights {
+            color: black;
+            padding: 12px 0;
+            text-align: center;
         }
     </style>
 </head>
@@ -194,8 +246,8 @@
             <div class="right">
                 <ul>
                     <li><a href="/">Home </a></li>
-                    <li><a href="/">About </a></li>
-                    <li><a href="/">Projects </a></li>
+                    <li><a href="#Working-over-the-year">Projects</a></li>
+                    <li><a href="/">About Me</a></li>
                     <li><a href="/">Contact Me </a></li>
                 </ul>
             </div>
@@ -208,6 +260,10 @@
                 Hi my name is <span class="purple">Raj.</span>
                 <div>& I am a passionate</div>
                 <span id="element"></span>
+                <div class="buttons">
+                    <button id="download-button" class="btn">Download Resume</button>
+                    <button id="link-button" class="btn">Github Profile</button>
+                </div>
             </div>
             <div class="rightSection">
                 <img src="coderbg.png" alt="Coder Background">
@@ -218,7 +274,7 @@
 
         <section class="secondSection">
             <span class="text-gray">What I have done so far.</span>
-            <h1>Work Experience </h1>
+            <h1 id="Working-over-the-year">Work Experience </h1>
 
             <div class="box">
                 <div class="vertical">
@@ -227,70 +283,99 @@
                         C/C++ Programming Concepts
                     </div>
                     <div class="vertical-desc">
-                        Lorem, ipsum dolor sit amet consectetur adipisicing elit.
-                        Veniam error ratione doloremque quos fugiat! Sit odit quo
-                        ex corporis assumenda, mollitia alias magni?
+                        The very beginning of the coding journey where i learnt
+                        how to code using c & its superset C++.
                     </div>
                 </div>
                 <div class="vertical">
-                    <img class = "image-top-cpp" src="cpp_logo.png" alt="">
+                    <img class="image-top-cpp" src="cpp_logo.png" alt="">
                     <div class="vertical-title-cpp">
                         DSA & OOPS Concepts using Java & C++
                     </div>
                     <div class="vertical-desc-cpp">
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                        Reiciendis deleniti veniam, facilis sit et tempore fuga 
-                        ad ab libero sequi iste quis iusto consequatur!
+                        After being able to code in Language c++/c.
+                        I started to learn about java. This lead to start of
+                        Data Structures & Object Oriented Programming using C++
+                        and Java.
                     </div>
                 </div>
                 <div class="vertical">
-                    <img class = "image-top" src="html.png" alt="">
+                    <img class="image-top" src="html.png" alt="">
                     <div class="vertical-title">
                         Data Base Management Systems & HTML,CSS,JS
                     </div>
                     <div class="vertical-desc">
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                        Reiciendis deleniti veniam, facilis sit et tempore fuga 
-                        ad ab libero sequi iste quis iusto consequatur!
+                        Then i learn basics of HTML and CSS with a little bit of
+                        JavaScript where i was furthur able to integrate a simple
+                        website with a relational Database System Mysql.
                     </div>
                 </div>
                 <div class="vertical">
-                    <img class = "image-top" src="java.png" alt="">
+                    <img class="image-top" src="java.png" alt="">
                     <div class="vertical-title">
                         Android Development with Java & XML
                     </div>
                     <div class="vertical-desc">
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                        Reiciendis deleniti veniam, facilis sit et tempore fuga 
-                        ad ab libero sequi iste quis iusto consequatur!
+                        Then i learnt the basics of java and xml.
+                        Also using Android Studio i started developing some
+                        basic applications and UserInterface.
                     </div>
                 </div>
                 <div class="vertical">
-                    <img class = "image-top" src="python.svg" alt="">
+                    <img class="image-top" src="python.svg" alt="">
                     <div class="vertical-title">
                         Machine Learning with Python Language
                     </div>
                     <div class="vertical-desc">
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                        Reiciendis deleniti veniam, facilis sit et tempore fuga 
-                        ad ab libero sequi iste quis iusto consequatur!
+                        Python was comparetively easier for me as i had
+                        previous good insights on C++ and Java. Using which
+                        i develop a Machine Learning Project.
+                        Customer Segmentation using K-Mean Clustering Algorithm.
                     </div>
                 </div>
                 <div class="vertical">
-                    <img class = "image-top" src="python.svg" alt="">
+                    <img class="image-top" src="python.svg" alt="">
                     <div class="vertical-title">
                         Natural Language Processing
                     </div>
                     <div class="vertical-desc">
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                        Reiciendis deleniti veniam, facilis sit et tempore fuga 
-                        ad ab libero sequi iste quis iusto consequatur!
+                        Under construction for getting meaningful insight on
+                        Natural Language Processing.
                     </div>
                 </div>
             </div>
 
         </section>
     </main>
+
+    <footer>
+        <div class="footer">
+            <div class="footer-first">
+                <h3>Raj's Developer Portfolio</h3>
+            </div>
+            <div class="footer-second">
+                <ul>Home</ul>
+                <ul>Home</ul>
+                <ul>Home</ul>
+                <ul>Home</ul>
+            </div>
+            <div class="footer-third">
+                <ul>Home</ul>
+                <ul>Home</ul>
+                <ul>Home</ul>
+                <ul>Home</ul>
+            </div>
+            <div class="footer-fourth">
+                <ul>Home</ul>
+                <ul>Home</ul>
+                <ul>Home</ul>
+                <ul>Home</ul>
+            </div>
+        </div>
+        <div class="text-rights">
+            Copyright &#169; www.rajportfolio.com | All Rights Reserved
+        </div>
+    </footer>
 
     <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
 
@@ -304,7 +389,7 @@
             typeSpeed: 50,
         });
     </script>
-
+    <script src="backend.js"> </script>
 </body>
 
 </html>
